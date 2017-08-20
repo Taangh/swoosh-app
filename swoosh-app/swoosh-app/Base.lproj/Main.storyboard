@@ -87,10 +87,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="U0j-yD-3DW" id="RHj-gg-1tV"/>
-                        <outlet property="swoosh" destination="MhK-cJ-1mD" id="gXJ-ik-Ydd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,6 +151,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="rW1-ge-4zG" eventType="touchUpInside" id="ZmJ-zI-frV"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XUV-r5-7FM">
                                 <rect key="frame" x="16" y="40" width="343" height="70"/>
@@ -206,6 +205,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0O4-sU-mZc"/>
                     </view>
+                    <connections>
+                        <segue destination="ATh-c9-qDT" kind="show" identifier="skillVCSegue" id="cFw-Gm-MNj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6UA-NA-elf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="r7q-Qu-Kdv" userLabel="Exit" sceneMemberID="exit"/>
